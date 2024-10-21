@@ -1,0 +1,41 @@
+body{
+    background-color: burlywood;
+}
+img{
+    height:500px;
+    width: 500px;
+}
+.card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.cards{
+    flex: 400px;
+}
+.image{
+    margin: 20px;
+}
+.button{
+    position: relative;
+    left: 15%;
+}
+
+button{
+    padding: 10px;
+    padding-left: 55px;
+    padding-right: 55px;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: 1px solid #000;
+    letter-spacing: 2px;
+    margin-left: 15px;
+
+}
+button:hover{
+    background-color: #000;
+    color: antiquewhite;
+    transition: 1s;
+}

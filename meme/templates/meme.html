@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <title>MEME</title>
+    <link rel="stylesheet" type="text/css" href="{% static '/meme.css/'  %}"/>
+</head>
+<body>
+<!--<a href="/main/logout/"><button>Logout</button></a>-->
+
+<div class="card">
+{% for meme in content%}
+    <div class="cards">
+    <div class="image">
+        <img src="{{meme.url}}" />
+    </div>
+    <div class="button">
+    <a href="/main/meme_details/?id={{meme.id}}"><button>Edit this meme</button> </a>
+    </div>    
+</div>
+ {% endfor %}
+
+</div>
+
+
+</body>
+
+
+</html>

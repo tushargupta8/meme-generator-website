@@ -1,0 +1,39 @@
+body{
+    background-color: #808080;
+
+}
+
+.details{
+    position: relative;
+    left: 50%;
+    padding-top: 180px;
+}
+
+input{
+    padding: 15px;
+
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid #000;
+    font-family:  Helvetica, sans-serif;
+    font-style: italic;
+    font-size: 1rem;
+    font-weight: 2px;
+}
+button{
+    padding: 10px;
+    padding-left: 55px;
+    padding-right: 55px;
+    background-color: white;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: 1px solid #000;
+    letter-spacing: 2px;
+    margin-left: 15px;
+
+}
+button:hover{
+    background-color: #000;
+    color: antiquewhite;
+    transition: 1s;
+}

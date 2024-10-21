@@ -1,0 +1,56 @@
+{% load static%}
+
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+    <title>Register</title>
+    <link rel="stylesheet" type="text/css" href="{%static '/register.css/'%}"/>
+  
+</head>
+
+<body>
+
+
+    <h2>{{message}}</h2>
+
+    <div class="signup">
+        <h1>SIGN UP</h1>
+
+    </div>
+
+    <form action="/main/register/" method='POST'>
+        <div class="details">
+          
+         <div class="name">   
+        <input type="text" name="username" placeholder="Enter your name" required autocomplete="off"/>
+         <div/>
+        <br/>
+         <div class="email"> 
+        <input type='email' name="email" placeholder="Enter your email"  autocomplete="off" required>
+         </div>
+         <br/>
+
+         
+         <div class="contact">   
+        <input type="text" name="contact" placeholder="Enter your contact" maxlength="10" autocomplete="off" required/>
+         </div>
+         <br/>
+         <div class="password">
+        <input type='password' name="password" placeholder="enter your passwordr" autocomplete="off" required>
+         </div>
+         <br/>
+         <div class="button">
+        
+        <button>Submit</button>
+         </div>
+         <br/>
+        </div>
+
+    </form>
+</body>
+
+
+</html>

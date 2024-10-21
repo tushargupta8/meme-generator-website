@@ -1,0 +1,40 @@
+{% load static %}
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="{% static '/login.css/'%}"/>
+</head>
+<body>
+    <h1>{{message}}</h1>
+
+    <div class="signin">
+        <h1>SIGN IN</h1>
+
+    </div>
+<form action="/main/login/" method="POST">
+    <div class="details">
+<div class="email">
+    <input type='email' name="email" placeholder="Enter your email" autocomplete='off' required/>
+</div>
+<br/>
+<div class="password">
+    <input type='password' name="password" placeholder="Enter your password" autocomplete='off' required/>
+</div>
+</br>
+<div class="button">
+    <button>Submit</button>
+</div>
+    </div>
+</form>
+
+</body>
+
+
+
+
+
+</html>

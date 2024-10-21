@@ -1,0 +1,33 @@
+{% load static%}
+
+<!DOCTYPE html>
+
+<html lang='en'>
+    <head>
+
+        <title>Mmem Details</title>
+        <link rel="stylesheet" type="text/css" href="{% static '/meme_details.css/'%}"/>
+    </head>
+<body>
+
+<form action="/main/edit_memes/" method="POST">
+    <div class="details">
+     <div class="id">   
+    <input type='id' name='id' value={{meme_id}} readonly autocomplete='off' required/>
+     </div>
+     <br/>
+     <div class="text1"> 
+    <input type='text' name="text_1" placeholder="Enter top text " required autocomplete="off"/>
+     </div>
+     <br/>
+     <div class="text2"> 
+    <input type='text' name="text_2" placeholder="Enter bottom text " required autocomplete="off"/>
+     </div>
+     <br/>
+    <button>Submit</button>
+    </div>
+</form>
+
+</body>
+
+</html
